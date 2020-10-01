@@ -7,11 +7,14 @@
           <h1 class="mb-3">Offrez-vous un moment de détente créatif</h1>
           <h2 class="mb-3">Grâce à la nouvelle plateforme de réservation d'ateliers créatifs jeudemains.com</h2>
           <h2 class="mb-4">Ne ratez pas le lancement !</h2>
+
           <div class="input-group input-group-newsletter">
-            <input type="email" class="form-control" placeholder="Votre email" aria-label="Enter email..." aria-describedby="submit-button">
-            <div class="input-group-append">
-              <button class="btn btn-secondary" type="button" id="submit-button">Me tenir informé.e</button>
-            </div>
+            <%= simple_form_for(@contact) do |f| %>
+              <%= f.input :email, label: "Votre e-mail" %>
+              <div class="input-group-append">
+                <%= f.submit 'Me tenir informé.e', class: "btn btn-secondary", id: "submit-button" %>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>

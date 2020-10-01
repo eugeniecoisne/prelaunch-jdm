@@ -54,7 +54,7 @@ h2 {
         outline: none;
         border: unset;
       }
-      button {
+      .submit-button {
         font-size: 0.8rem;
         font-family: "Montserrat";
         font-weight: 600;
@@ -205,7 +205,7 @@ h2 {
           border-radius: 5px;
           border: unset;
         }
-        button {
+        .submit-button {
           margin-top: 10px;
           padding: 0.6rem;
           width: 100%;
@@ -281,7 +281,7 @@ h2 {
           border-radius: 5px;
           border: unset;
         }
-        button {
+        .submit-button {
           margin-top: 10px;
           padding: 0.6rem 1rem;
           width: auto;
