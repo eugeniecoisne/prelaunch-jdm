@@ -27,7 +27,7 @@ h2 {
 
 
 .masthead {
-  background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_1400/v1595585944/background-desktop.png');
+  background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_1400/v1601984097/jeu-de-mains-banniere-desktop.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -42,26 +42,34 @@ h2 {
       margin-top: 8rem;
       margin-bottom: 2rem !important;
     }
-    .input-group {
+
+    .simple_form {
       max-width: 500px;
       margin-top: 2rem;
-    }
-    .input-group-newsletter {
+      display: flex;
+      height: 40px;
       input {
-        height: auto;
+        height: 40px;
         font-size: 1rem;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         outline: none;
         border: unset;
       }
-      .submit-button {
+      .email {
+        min-width: 240px;
+        max-width: 320px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+      #submit-button {
         font-size: 0.8rem;
         font-family: "Montserrat";
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
-        padding: 1rem;
         outline: none;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
       }
     }
   }
@@ -176,7 +184,7 @@ h2 {
 @media (min-width: 100px) and (max-width: 575px) {
   .masthead {
     padding-bottom: 0.3rem;
-    background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_650/v1595585944/background-mobile.png');
+    background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_650/v1601984334/jeu-de-mains-banniere-mobile.png');
     .masthead-content {
       padding-bottom: 1.3rem !important;
       img {
@@ -194,22 +202,29 @@ h2 {
         font-size: 17px;
         max-width: 300px;
       }
-      .input-group {
+
+
+      .simple_form {
         flex-direction : column;
-        margin-top: unset;
-      }
-      .input-group-newsletter {
+        margin: unset;
+
         input {
-          padding: 0.6rem;
           width: 100%;
-          border-radius: 5px;
           border: unset;
+          height: 40px !important;
         }
-        .submit-button {
-          margin-top: 10px;
-          padding: 0.6rem;
+
+        .form-group {
+          margin-bottom: 0.5rem;
+        }
+        .email {
           width: 100%;
-          border-radius: 5px;
+          max-width: 100%;
+          border-radius: 4px;
+        }
+        #submit-button {
+          width: 100%;
+          border-radius: 4px;
         }
       }
     }
@@ -218,7 +233,7 @@ h2 {
 
   .social-icons {
     ul {
-      margin-top: 0;
+      margin-top: 52px;
       li {
         a {
           font-size: 1.7rem;
@@ -251,7 +266,7 @@ h2 {
   }
   .masthead {
       background-position: top;
-      background: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_800/v1595585944/background-tablet.png');
+      background: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_800/v1601984097/jeu-de-mains-banniere-tablet.png');
       padding-bottom: 0.3rem;
     .masthead-content {
       padding-bottom: 1rem !important;
@@ -270,22 +285,27 @@ h2 {
         font-size: 18px;
         max-width: 260px;
       }
-      .input-group {
+
+      .simple_form {
         flex-direction : column;
-        margin-top: unset;
-      }
-      .input-group-newsletter {
+        margin: unset;
+
         input {
-          padding: 0.6rem 1rem;
-          width: 300px;
-          border-radius: 5px;
+          width: 290px;
           border: unset;
+          height: 40px !important;
         }
-        .submit-button {
-          margin-top: 10px;
-          padding: 0.6rem 1rem;
-          width: auto;
-          border-radius: 5px;
+        .form-group {
+          margin-bottom: 0.5rem;
+        }
+        .email {
+          width: 290px;
+          max-width: 290px;
+          border-radius: 4px;
+        }
+        #submit-button {
+          width: 290px;
+          border-radius: 4px;
         }
       }
     }
