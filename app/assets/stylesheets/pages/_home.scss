@@ -212,6 +212,7 @@ h2 {
       .simple_form {
         flex-direction : column;
         margin: unset;
+        margin-bottom: 52px;
 
         input {
           width: 100%;
@@ -238,7 +239,7 @@ h2 {
 
   .social-icons {
     ul {
-      margin-top: 52px;
+      margin-top: unset;
       li {
         a {
           font-size: 1.7rem;
