@@ -1,0 +1,100 @@
+// CSS - HOMEPAGE
+
+// CONTAINER
+
+.home-steps-container {
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// EXPLANATIONS ABOUT THE PLATFORM FOR BTOC
+
+.home-steps-title {
+  color: $blue;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: unset;
+}
+.home-steps-presentation {
+  margin: 2em 7em 3em 7em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4em;
+}
+
+.home-step-presentation {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  img {
+    height: 9em;
+    margin-bottom: 1.5em;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 17px;
+    color: $dark-blue;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+
+// RESPONSIVE HOMEPAGE//
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 574px) {
+  .home-container {
+    margin: 0.8em;
+  }
+  .home-step-presentation {
+    p {
+      font-size: 15px;
+    }
+  }
+  .home-steps-title {
+    margin-top: 1em;
+    font-size: 21px;
+    padding: 0 14px;
+    margin-bottom: unset;
+  }
+  .home-steps-presentation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: unset;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 575px) and (max-width: 900px) {
+  .home-steps-title {
+    margin-top: 1em;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-steps-presentation {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: unset;
+    max-width: 400px;
+  }
+}
+
+
+
+
