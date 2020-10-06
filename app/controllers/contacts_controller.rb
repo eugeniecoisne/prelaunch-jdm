@@ -4,17 +4,12 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
-      redirect_to thanks_path
-    else
       redirect_back fallback_location: root_path
+      flash[:notice] = "Merci de votre enthousiasme, rendez-vous au lancement et d'ici là n'hésitez pas à suivre notre actu sur instagram !"
     end
   end
 
   def thanks
-  end
-
-  def index
-    @contacts = Contact.all
   end
 
   private
