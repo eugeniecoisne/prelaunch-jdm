@@ -4,14 +4,16 @@
       <div class="col-12">
         <div class="masthead-content text-white py-5 py-md-0">
           <img align="center" loading= "lazy" alt="jeu de mains logo" border="0" class="center fixedwidth" src="https://res.cloudinary.com/eugeniedenis/image/upload/v1601983819/jeu-de-mains-logo-bleu-fonce.svg" style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 300px; display: block; margin-bottom: 30px;" title="jeu de mains logo" width="120"/>
-          <h1 class="mb-3">Offrez-vous un moment de détente créatif</h1>
-          <h2 class="mb-3">Grâce à la nouvelle plateforme de réservation d'ateliers créatifs jeudemains.com</h2>
-          <h2 class="mb-4">Ne ratez pas le lancement :</h2>
+          <div>
+            <h1 class="mb-3">Offrez-vous un moment de détente créatif</h1>
+            <h2 class="mb-3">Grâce à la nouvelle plateforme de réservation d'ateliers créatifs jeudemains.com</h2>
+            <h2 class="mb-4">Ne ratez pas le lancement :</h2>
 
-          <%= simple_form_for(@contact) do |f| %>
-            <%= f.input :email, label: false, placeholder: "Votre e-mail" %>
-            <%= f.submit 'Me tenir informé.e', class: "btn btn-secondary", id: "submit-button" %>
-          <% end %>
+            <%= simple_form_for(@contact) do |f| %>
+              <%= f.input :email, label: false, placeholder: "Votre e-mail" %>
+              <%= f.submit 'Me tenir informé.e', class: "btn btn-secondary", id: "submit-button" %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

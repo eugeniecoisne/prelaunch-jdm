@@ -191,7 +191,11 @@ h2 {
     background-image: url('https://res.cloudinary.com/eugeniedenis/image/upload/c_fill,w_650/v1601984334/jeu-de-mains-banniere-mobile.png');
     height: 640px;
     .masthead-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding-bottom: 1.3rem !important;
+      height: 560px;
       img {
         max-width: 155px !important;
         width: 155px !important;
@@ -199,7 +203,6 @@ h2 {
         margin-bottom: unset !important;
       }
       h1 {
-        margin-top: 12rem;
         font-size: 22px;
         max-width: 300px;
       }
