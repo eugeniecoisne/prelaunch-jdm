@@ -2,10 +2,12 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-
     if @contact.save
       redirect_back fallback_location: root_path
-      flash[:notice] = "Merci de votre enthousiasme, rendez-vous au lancement et d'ici là n'hésitez pas à suivre notre actu sur instagram !"
+      flash[:notice] = "Merci pour votre enthousiasme ! Rendez-vous au lancement et d'ici là n'hésitez pas à suivre notre actu sur instagram !"
+    else
+      redirect_back fallback_location: root_path
+      flash[:alert] = "Votre adresse e-mail ne semble pas correcte. Réessayez ou contactez-nous ;)"
     end
   end
 
