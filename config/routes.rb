@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     resources :contacts, only: %i(new)
   end
   resources :contacts, only: %i(create)
-
-  get 'thanks', to: 'contacts#thanks'
+  get 'mentions-legales', to: 'pages#legal_notice'
+  get 'politique-de-confidentialite', to: 'pages#privacy_policy'
+  get 'cgu', to: 'pages#cgu'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

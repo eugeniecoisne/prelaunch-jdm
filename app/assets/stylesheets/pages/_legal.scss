@@ -1,0 +1,143 @@
+// CSS LEGAL //
+
+.navbar-jdm {
+  justify-content: left;
+  align-items: start;
+  background-color: $light-blue;
+  .navbar-brand img {
+    width: 6em;
+  }
+}
+
+.legal-container {
+  margin: 90px 100px;
+  min-height: 1000px;
+}
+
+.legal-title {
+  h1 {
+    max-width: 100%;
+    color: $light-blue;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+}
+
+.legal-content {
+  h2 {
+    color: $light-blue;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 16px;
+    color: $blue;
+    font-weight: 500;
+    max-width: 100%;
+    margin-top: 1rem;
+    text-decoration: underline;
+  }
+  p {
+    font-weight: 500;
+    font-size: 15px;
+    color: $dark-gray;
+    text-align: justify;
+  }
+  a {
+    text-decoration: none;
+    outline: none;
+    color: $dark-gray;
+    font-weight: 600;
+  }
+  a:hover {
+    color: black;
+  }
+  ol {
+    margin-bottom: 2rem;
+    list-style-type: lower-latin;
+    padding-inline-start: 30px;
+  }
+  li {
+    p {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.legal-paragraph {
+  margin: 40px 0;
+}
+
+.legal-sub-paragraph {
+  margin: 40px 0;
+  margin-left: 20px;
+}
+
+
+
+
+// RESPONSIVE DESIGN LEGAL //
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .navbar-jdm {
+    padding: 0.5em;
+    .navbar-brand img {
+      width: 5em;
+    }
+  }
+  .legal-container {
+    margin: 50px 25px;
+  }
+  .legal-title {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .legal-content {
+    h2 {
+      font-size: 17px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  .legal-container {
+    margin: 70px 50px;
+  }
+  .legal-title {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .legal-content {
+    h2 {
+      font-size: 17px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px)  {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
